@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .top-bar {
+            padding: 10px 50px;
+            background-color: rgb(255, 197, 71);
+            text-align: center;
+            font-size: 1rem;
+            color: white;
+        }
+        nav {
+            height: 90px;
+            font-size: 1.5rem;
+            background-color: deeppink;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: -webkit-sticky;
+        }
+        section {
+            max-width: 1320px;
+            width: 100%;
+            margin: auto;
+            padding-block: 50px;
+        }
+        section p {
+            font-size: 3rem;
+            margin-bottom: 4rem;
+        }
+        .sticky {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 999;
+            box-shadow: 0 0 8px rgba(235, 24, 24, 0.833);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <p>Top Bar</p>
+        </div>
+        <nav>
+            <p>Nav Bar</p>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus itaque quisquam quae, fugit minus vitae officia sapiente inventore deserunt. Est eveniet aspernatur modi sapiente dolore autem quasi optio, ullam molestias accusantium nam explicabo non culpa esse eius! Eveniet nobis, nam tenetur id optio quidem? Ratione esse voluptatem doloribus mollitia cum!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus itaque quisquam quae, fugit minus vitae officia sapiente inventore deserunt. Est eveniet aspernatur modi sapiente dolore autem quasi optio, ullam molestias accusantium nam explicabo non culpa esse eius! Eveniet nobis, nam tenetur id optio quidem? Ratione esse voluptatem doloribus mollitia cum!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus itaque quisquam quae, fugit minus vitae officia sapiente inventore deserunt. Est eveniet aspernatur modi sapiente dolore autem quasi optio, ullam molestias accusantium nam explicabo non culpa esse eius! Eveniet nobis, nam tenetur id optio quidem? Ratione esse voluptatem doloribus mollitia cum!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus itaque quisquam quae, fugit minus vitae officia sapiente inventore deserunt. Est eveniet aspernatur modi sapiente dolore autem quasi optio, ullam molestias accusantium nam explicabo non culpa esse eius! Eveniet nobis, nam tenetur id optio quidem? Ratione esse voluptatem doloribus mollitia cum!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus itaque quisquam quae, fugit minus vitae officia sapiente inventore deserunt. Est eveniet aspernatur modi sapiente dolore autem quasi optio, ullam molestias accusantium nam explicabo non culpa esse eius! Eveniet nobis, nam tenetur id optio quidem? Ratione esse voluptatem doloribus mollitia cum!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus itaque quisquam quae, fugit minus vitae officia sapiente inventore deserunt. Est eveniet aspernatur modi sapiente dolore autem quasi optio, ullam molestias accusantium nam explicabo non culpa esse eius! Eveniet nobis, nam tenetur id optio quidem? Ratione esse voluptatem doloribus mollitia cum!</p>
+        </section>
+    </main>
+    <!-- Jqury cdn -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- main js -->
+    <script src="./js/stickyNav.js"></script>
+</body>
+</html>

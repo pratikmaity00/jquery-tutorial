@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.accordian-sec {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    max-width: 500px;
+    width: 100%;
+    margin: auto;
+    padding-inline: 16px;
+    /* background-color: cornflowerblue; */
+}
+
+.accordian {
+    /* background-color: blanchedalmond; */
+    margin-bottom: 5px;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.accordian:nth-child(1) {
+    background-color: rgba(251, 163, 182, 0.546);
+    position: relative;
+    overflow: hidden;
+}
+
+.accordian:nth-child(1)::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 6px;
+    height: 100%;
+    background-color: rgba(234, 102, 130, 0.774);
+}
+
+.accordian:nth-child(2) {
+    background-color: rgba(157, 178, 248, 0.547);
+    position: relative;
+    overflow: hidden;
+}
+
+.accordian:nth-child(2)::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 6px;
+    height: 100%;
+    background-color: rgba(88, 124, 244, 0.772);
+}
+
+.accordian:nth-child(3) {
+    background-color: rgba(248, 247, 157, 0.547);
+    position: relative;
+    overflow: hidden;
+}
+
+.accordian:nth-child(3)::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 6px;
+    height: 100%;
+    background-color: rgba(245, 241, 37, 0.836);
+}
+
+.accordian:nth-child(4) {
+    background-color: rgba(157, 248, 198, 0.547);
+    position: relative;
+    overflow: hidden;
+}
+
+.accordian:nth-child(4)::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 6px;
+    height: 100%;
+    background-color: rgba(97, 243, 163, 0.785);
+}
+
+.accordian-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.accordian-details {
+    display: none;
+    padding-top: 10px;
+}
+
+.accordian-item .close {
+    transform: translateX(-180deg);
+}
+.accordian-item .close {
+    display: none;
+    transform: translateX(180deg);
+}
